@@ -3,7 +3,7 @@ Claro! Aqui está o `README.md` com as versões em inglês e português:
 ---
 
 # PLC (Prompt Language Code)
-
+![PLC in action with Llama3]([URL_do_GIF](https://github.com/Peterson047/Project-ORA/blob/main/MISC/ORA.gif))
 ## English Version
 
 ### Description
