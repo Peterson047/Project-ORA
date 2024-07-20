@@ -5,7 +5,9 @@ const PromptDisplay = ({ define, context, func }) => {
     <div>
       <h2>Generated PLC Prompt</h2>
       <pre>
-        {`DEFINE 
+        {`//NEURAL_MODEL_INSTRUCTION="Follow definitions below"
+
+        DEFINE 
     YOUR_NAME="${define.yourName}"
     YOU_IS="${define.youIs}"
 
