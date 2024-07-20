@@ -21,7 +21,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>PLC Prompt Builder</h1>
+      <h1>PLC PROMPT GENERATOR</h1>
+      <br></br>
       <DefineSection onDefineChange={setDefine} />
       <ContextSection onContextChange={setContext} />
       <FunctionSection onFunctionChange={setFunction} />

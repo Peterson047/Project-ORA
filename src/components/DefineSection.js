@@ -10,13 +10,13 @@ const DefineSection = ({ onDefineChange }) => {
 
   return (
     <div>
-      <h2>DEFINE</h2>
+      <h2>DEFINITION</h2>
       <label>
         <input
           type="text"
           value={yourName}
           onChange={(e) => setYourName(e.target.value)}
-          placeholder="Specify an identity for the model"
+          placeholder="Specify a definition for the model"
         />
       </label>
     </div>

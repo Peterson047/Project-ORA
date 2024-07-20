@@ -5,11 +5,10 @@ const PromptDisplay = ({ define, context, func }) => {
   //NEURAL_MODEL_INSTRUCTION="Follow definitions below"
   DEFINE 
     YOUR_NAME="${define.yourName}"
-    YOU_IS="${define.youIs}"
+    YOUR_FUNCTION="${func.expectedResponse}"
 
 CONTEXT
-    PLACE="${context.place}"
-    PERSONAS="${context.personas}"
+    SCENARIO="${context.place}"
     PROMPT_LANGUAGE="${context.promptLanguage}"
     
 FUNCTION
