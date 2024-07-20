@@ -30,7 +30,13 @@ const App = () => {
       {showPrompt && (
         <PromptDisplay define={define} context={context} func={func} />
       )}
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <a href="https://github.com/Peterson047/Project-ORA">Github</a>
     </div>
+
   );
 };
 
