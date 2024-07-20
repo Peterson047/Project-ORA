@@ -3,12 +3,14 @@ Claro! Aqui está o `README.md` com as versões em inglês e português:
 ---
 
 # PLC (Prompt Language Code)
-![PLC in action with Llama3](https://github.com/Peterson047/Project-ORA/blob/main/MISC/ORA.gif))
+
 ## English Version
 
 ### Description
 
 PLC (Prompt Language Code) is a markup language designed to optimize responses from neural networks, especially text-generative ones. This language facilitates communication with AI models by clearly defining the context, expected function, and specific variables.
+
+![PLC in action with Llama3](https://github.com/Peterson047/Project-ORA/blob/main/MISC/ORA.gif)
 
 ### Objective
 
