@@ -24,15 +24,6 @@ const ContextSection = ({ onContextChange }) => {
       <label>
         <input
           type="text"
-          value={personas}
-          onChange={(e) => setPersonas(e.target.value)}
-          placeholder="Personas"
-        />
-      </label>
-      <br />
-      <label>
-        <input
-          type="text"
           value={promptLanguage}
           onChange={(e) => setPromptLanguage(e.target.value)}
           placeholder="Language"

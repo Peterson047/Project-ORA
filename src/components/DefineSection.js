@@ -19,15 +19,6 @@ const DefineSection = ({ onDefineChange }) => {
           placeholder="Specify an identity for the model"
         />
       </label>
-      <br />
-      <label>
-        <input
-          type="text"
-          value={youIs}
-          onChange={(e) => setYouIs(e.target.value)}
-          placeholder="specify its function"
-        />
-      </label>
     </div>
   );
 };
