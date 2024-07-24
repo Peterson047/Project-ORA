@@ -1,173 +1,134 @@
-Claro! Aqui está o `README.md` com as versões em inglês e português:
+<div align="center">
+  <img src="ollama-nextjs-ui.gif">
+</div>
 
----
+<h1 align="center">
+  Fully-featured & beautiful web interface for Ollama LLMs
+</h1>
 
-# PLC (Prompt Language Code)
+<div align="center">
+  
+![GitHub Repo stars](https://img.shields.io/github/stars/jakobhoeg/nextjs-ollama-llm-ui)
+  
+</div>
 
-## English Version
 
-### Description
+Get up and running with Large Language Models **quickly**, **locally** and even **offline**.
+This project aims to be the easiest way for you to get started with LLMs. No tedious and annoying setup required!
 
-PLC (Prompt Language Code) is a markup language designed to optimize responses from neural networks, especially text-generative ones. This language facilitates communication with AI models by clearly defining the context, expected function, and specific variables.
+# Features ✨
 
-![PLC in action with Llama3](https://github.com/Peterson047/Project-ORA/blob/main/MISC/ORA.gif)
+- **Beautiful & intuitive UI:** Inspired by ChatGPT, to enhance similarity in the user experience.
+- **Fully local:** Stores chats in localstorage for convenience. No need to run a database.
+- **Fully responsive:** Use your phone to chat, with the same ease as on desktop.
+- **Easy setup:** No tedious and annoying setup required. Just clone the repo and you're good to go!
+- **Code syntax highligting:** Messages that include code, will be highlighted for easy access.
+- **Copy codeblocks easily:** Easily copy the highlighted code with one click.
+- **Download/Pull & Delete models:** Easily download and delete models directly from the interface.
+- **Switch between models:** Switch between models fast with a click.
+- **Chat history:** Chats are saved and easily accessed.
+- **Light & Dark mode:** Switch between light & dark mode.
 
-### Objective
+# Preview
 
-In this initial version, the focus is on three processing points:
-1. **Definition**
-2. **Context**
-3. **Expected Function**
+https://github.com/jakobhoeg/nextjs-ollama-llm-ui/assets/114422072/08eaed4f-9deb-4e1b-b87a-ba17d81b9a02
 
-### Syntax
+# Requisites ⚙️
 
-The structure of a PLC prompt consists of three main sections:
+To use the web interface, these requisites must be met:
 
-#### 1. Definition (DEFINE)
-- Variables are defined in uppercase.
-- The value of each variable is assigned using `=` and enclosed in double quotes.
+1. Download [Ollama](https://ollama.com/download) and have it running. Or run it in a Docker container. Check the [docs](https://github.com/ollama/ollama) for instructions.
+2. Node.js (18+) and npm is required. [Download](https://nodejs.org/en/download)
 
-Example:
-```plaintext
-DEFINE 
-    YOUR_NAME="ORA"
-    YOU_IS="PSYCHOLOGIST"
+# Deploy your own to Vercel or Netlify in one click ✨
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjakobhoeg%2Fnextjs-ollama-llm-ui&env=NEXT_PUBLIC_OLLAMA_URL&envDescription=Your%20Ollama%20URL) [![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jakobhoeg/nextjs-ollama-llm-ui)
+
+You'll need to set your [OLLAMA_ORIGINS](https://github.com/ollama/ollama/blob/main/docs/faq.md) environment variable on your machine that is running Ollama:
+
+```
+OLLAMA_ORIGINS="https://your-app.vercel.app/"
 ```
 
-#### 2. Context (CONTEXT)
-- Describes the environment and the characters involved.
-- Each character is defined with specific details.
+# Installation 📖
 
-Example:
-```plaintext
-CONTEXT
-    PLACE="In a service"
-    PERSONAS="You=ORA, Other=PETERSON"
-        Other>PETERSON="Brazilian, 28 years old, existential doubts"
-    PROMPT_LANGUAGE="Portuguese-Brazilian"
+[![Packaging status](https://repology.org/badge/vertical-allrepos/nextjs-ollama-llm-ui.svg?columns=3)](https://repology.org/project/nextjs-ollama-llm-ui/versions)
+
+Use a pre-build package from one of the supported package managers to run a local environment of the web interface.
+Alternatively you can install from source with the instructions below.
+
+> [!NOTE]  
+> If your frontend runs on something other than `http://localhost` or `http://127.0.0.1`, you'll need to set the OLLAMA_ORIGINS to your frontend url.
+>
+> This is also stated in the [documentation](https://github.com/ollama/ollama/blob/main/docs/faq.md#how-do-i-configure-ollama-server):
+> 
+> `Ollama allows cross-origin requests from 127.0.0.1 and 0.0.0.0 by default. Additional origins can be configured with OLLAMA_ORIGINS`
+
+## Install from source
+
+**1. Clone the repository to a directory on your pc via command prompt:**
+
+```
+git clone https://github.com/jakobhoeg/nextjs-ollama-llm-ui
 ```
 
-#### 3. Expected Function (FUNCTION)
-- Defines the expected response of the AI based on the provided context.
+**2. Open the folder:**
 
-Example:
-```plaintext
-FUNCTION
-    EXPECTED_RESPONSE="As a fictional character, you must respond as the character"
+```
+cd nextjs-ollama-llm-ui
 ```
 
-### Complete Example
+**3. Rename the `.example.env` to `.env`:**
 
-```plaintext
-DEFINE 
-    YOUR_NAME="ORA"
-    YOU_IS="PSYCHOLOGIST"
-
-CONTEXT
-    PLACE="In a service"
-    PERSONAS="You=ORA, Other=PETERSON"
-        Other>PETERSON="Brazilian, 28 years old, existential doubts"
-    PROMPT_LANGUAGE="Portuguese-Brazilian"
-    
-FUNCTION
-    EXPECTED_RESPONSE="As a fictional character, you must respond as the character"
+```
+mv .example.env .env
 ```
 
-### Notes
+**4. If your instance of Ollama is NOT running on the default ip-address and port, change the variable in the .env file to fit your usecase:**
 
-- This is an initial version and should be considered a draft of a promising idea.
-- One of the central ideas is the definition of functions, such as `Other>PETERSON="Brazilian, 28 years old, existential doubts"`, where an uppercase variable receives a function with a set of data.
-
-### Contributions
-
-Feel free to contribute to this project through suggestions, corrections, or additions.
-
-### License
-
-This project is licensed under the [License Name].
-
----
-
-## Versão em Português
-
-### Descrição
-
-PLC (Prompt Language Code) é uma linguagem de marcação projetada para otimizar respostas de redes neurais, especialmente aquelas generativas textuais. Esta linguagem facilita a comunicação com modelos de IA ao definir claramente o contexto, a função esperada e variáveis específicas.
-
-### Objetivo
-
-Nesta primeira versão, o foco está em três pontos de processamento:
-1. **Definição**
-2. **Contexto**
-3. **Função Esperada**
-
-### Sintaxe
-
-A estrutura de um prompt PLC é composta por três seções principais:
-
-#### 1. Definição (DEFINE)
-- As variáveis são definidas em maiúsculas.
-- O valor de cada variável é atribuído usando `=` e colocado entre aspas duplas.
-
-Exemplo:
-```plaintext
-DEFINE 
-    YOUR_NAME="ORA"
-    YOU_IS="PSYCHOLOGIST"
+```
+NEXT_PUBLIC_OLLAMA_URL="http://localhost:11434"
 ```
 
-#### 2. Contexto (CONTEXT)
-- Descreve o ambiente e os personagens envolvidos.
-- Cada personagem é definido com detalhes específicos.
+**5. Install dependencies:**
 
-Exemplo:
-```plaintext
-CONTEXT
-    PLACE="Em um serviço"
-    PERSONAS="You=ORA, Other=PETERSON"
-        Other>PETERSON="Brasileiro, 28 anos, dúvidas existenciais"
-    PROMPT_LANGUAGE="Português-Brasileiro"
+```
+npm install
 ```
 
-#### 3. Função Esperada (FUNCTION)
-- Define a resposta esperada da IA com base no contexto fornecido.
+**6. Start the development server:**
 
-Exemplo:
-```plaintext
-FUNCTION
-    EXPECTED_RESPONSE="Como um personagem fictício, você deve responder como o personagem"
+```
+npm run dev
 ```
 
-### Exemplo Completo
+**5. Go to [localhost:3000](http://localhost:3000) and start chatting with your favourite model!**
 
-```plaintext
-DEFINE 
-    YOUR_NAME="ORA"
-    YOU_IS="PSYCHOLOGIST"
+# Upcoming features
 
-CONTEXT
-    PLACE="Em um serviço"
-    PERSONAS="You=ORA, Other=PETERSON"
-        Other>PETERSON="Brasileiro, 28 anos, dúvidas existenciais"
-    PROMPT_LANGUAGE="Português-Brasileiro"
-    
-FUNCTION
-    EXPECTED_RESPONSE="Como um personagem fictício, você deve responder como o personagem"
-```
+This is a to-do list consisting of upcoming features.
+- ✅ Voice input support
+- ✅ Code syntax highlighting
+- ⬜️ Ability to send an image in the prompt to utilize vision language models.
+- ⬜️ Ability to regenerate responses
+- ⬜️ Import and export chats
 
-### Notas
+# Tech stack
 
-- Esta é uma versão inicial e deve ser considerada um rascunho de uma ideia promissora.
-- Uma das ideias centrais é a definição de funções, como `Other>PETERSON="Brasileiro, 28 anos, dúvidas existenciais"`, onde uma variável maiúscula recebe uma função com um conjunto de dados.
+[NextJS](https://nextjs.org/) - React Framework for the Web
 
-### Contribuições
+[TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework
 
-Sinta-se à vontade para contribuir com este projeto, seja através de sugestões, correções ou adições.
+[shadcn-ui](https://ui.shadcn.com/) - UI component built using Radix UI and Tailwind CSS
 
-### Licença
+[shadcn-chat](https://github.com/jakobhoeg/shadcn-chat) - Chat components for NextJS/React projects
 
-Este projeto é licenciado sob a [Nome da Licença].
+[Framer Motion](https://www.framer.com/motion/) - Motion/animation library for React
 
----
+[Lucide Icons](https://lucide.dev/) - Icon library
 
-Este `README.md` fornece uma estrutura clara e informativa em ambas as línguas, facilitando a compreensão do objetivo e uso da linguagem PLC.
+# Helpful links
+
+[Medium Article](https://medium.com/@bartek.lewicz/launch-your-own-chatgpt-clone-for-free-on-colab-shareable-and-online-in-less-than-10-minutes-da19e44be5eb) - How to launch your own ChatGPT clone for free on Google Colab. By Bartek Lewicz.
+
+[Lobehub mention](https://lobehub.com/blog/5-ollama-web-ui-recommendation#5-next-js-ollama-llm-ui) - Five Excellent Free Ollama WebUI Client Recommendations
