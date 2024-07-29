@@ -12,61 +12,61 @@
   
 </div>
 
+Comece rapidamente com Modelos de Linguagem Grande (LLMs) de forma **rápida**, **local** e até mesmo **offline**. Este projeto tem como objetivo ser a maneira mais fácil para você começar com LLMs. Nenhuma configuração tediosa e irritante é necessária!
 
-Get up and running with Large Language Models **quickly**, **locally** and even **offline**.
-This project aims to be the easiest way for you to get started with LLMs. No tedious and annoying setup required!
+# Funcionalidades ✨
 
-# Features ✨
+- **UI bonita e intuitiva:** Inspirada no ChatGPT, para melhorar a similaridade na experiência do usuário.
+- **Totalmente local:** Armazena conversas no armazenamento local para conveniência. Sem necessidade de executar um banco de dados.
+- **Totalmente responsivo:** Use seu celular para conversar, com a mesma facilidade que no desktop.
+- **Configuração fácil:** Nenhuma configuração tediosa e irritante é necessária. Basta clonar o repositório e começar!
+- **Realce de sintaxe de código:** Mensagens que incluem código são destacadas para fácil acesso.
+- **Copie blocos de código facilmente:** Copie facilmente o código destacado com um clique.
+- **Download/Pull & Delete de modelos:** Faça download e delete modelos diretamente pela interface.
+- **Alternar entre modelos:** Troque entre modelos rapidamente com um clique.
+- **Histórico de conversas:** As conversas são salvas e facilmente acessadas.
+- **Modo claro e escuro:** Alternar entre modo claro e escuro.
 
-- **Beautiful & intuitive UI:** Inspired by ChatGPT, to enhance similarity in the user experience.
-- **Fully local:** Stores chats in localstorage for convenience. No need to run a database.
-- **Fully responsive:** Use your phone to chat, with the same ease as on desktop.
-- **Easy setup:** No tedious and annoying setup required. Just clone the repo and you're good to go!
-- **Code syntax highligting:** Messages that include code, will be highlighted for easy access.
-- **Copy codeblocks easily:** Easily copy the highlighted code with one click.
-- **Download/Pull & Delete models:** Easily download and delete models directly from the interface.
-- **Switch between models:** Switch between models fast with a click.
-- **Chat history:** Chats are saved and easily accessed.
-- **Light & Dark mode:** Switch between light & dark mode.
-
-# Preview
+# Prévia
 
 https://github.com/jakobhoeg/nextjs-ollama-llm-ui/assets/114422072/08eaed4f-9deb-4e1b-b87a-ba17d81b9a02
 
-# Requisites ⚙️
+# Requisitos ⚙️
 
-To use the web interface, these requisites must be met:
+Para usar a interface web, estes requisitos devem ser atendidos:
 
-1. Download [Ollama](https://ollama.com/download) and have it running. Or run it in a Docker container. Check the [docs](https://github.com/ollama/ollama) for instructions.
-2. Node.js (18+) and npm is required. [Download](https://nodejs.org/en/download)
+1. Baixe [Ollama](https://ollama.com/download) e o tenha em execução. Ou execute-o em um contêiner Docker. Verifique a [documentação](https://github.com/ollama/ollama) para instruções.
+2. Node.js (18+) e npm são necessários. [Download](https://nodejs.org/en/download)
 
-# Deploy your own to Vercel or Netlify in one click ✨
+# Implemente o seu próprio no Vercel ou Netlify com um clique ✨
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjakobhoeg%2Fnextjs-ollama-llm-ui&env=NEXT_PUBLIC_OLLAMA_URL&envDescription=Your%20Ollama%20URL) [![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jakobhoeg/nextjs-ollama-llm-ui)
+[![Implementar com Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjakobhoeg%2Fnextjs-ollama-llm-ui&env=NEXT_PUBLIC_OLLAMA_URL&envDescription=Sua%20URL%20Ollama) [![Botão de implementação no Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jakobhoeg/nextjs-ollama-llm-ui)
 
-You'll need to set your [OLLAMA_ORIGINS](https://github.com/ollama/ollama/blob/main/docs/faq.md) environment variable on your machine that is running Ollama:
+Você precisará definir sua variável de ambiente [OLLAMA_ORIGINS](https://github.com/ollama/ollama/blob/main/docs/faq.md) em sua máquina que está executando Ollama:
+
 
 ```
-OLLAMA_ORIGINS="https://your-app.vercel.app/"
+OLLAMA_ORIGINS="https://seu-app.vercel.app/"
 ```
 
-# Installation 📖
 
-[![Packaging status](https://repology.org/badge/vertical-allrepos/nextjs-ollama-llm-ui.svg?columns=3)](https://repology.org/project/nextjs-ollama-llm-ui/versions)
+# Instalação 📖
 
-Use a pre-build package from one of the supported package managers to run a local environment of the web interface.
-Alternatively you can install from source with the instructions below.
+[![Status de empacotamento](https://repology.org/badge/vertical-allrepos/nextjs-ollama-llm-ui.svg?columns=3)](https://repology.org/project/nextjs-ollama-llm-ui/versions)
 
-> [!NOTE]  
-> If your frontend runs on something other than `http://localhost` or `http://127.0.0.1`, you'll need to set the OLLAMA_ORIGINS to your frontend url.
+Use um pacote pré-construído de um dos gerenciadores de pacotes suportados para executar um ambiente local da interface web. Alternativamente, você pode instalar a partir do código-fonte com as instruções abaixo.
+
+> [!NOTA]  
+> Se seu frontend rodar em algo diferente de `http://localhost` ou `http://127.0.0.1`, você precisará definir OLLAMA_ORIGINS para a URL do seu frontend.
 >
-> This is also stated in the [documentation](https://github.com/ollama/ollama/blob/main/docs/faq.md#how-do-i-configure-ollama-server):
+> Isso também está declarado na [documentação](https://github.com/ollama/ollama/blob/main/docs/faq.md#how-do-i-configure-ollama-server):
 > 
-> `Ollama allows cross-origin requests from 127.0.0.1 and 0.0.0.0 by default. Additional origins can be configured with OLLAMA_ORIGINS`
+> `Ollama permite solicitações de origens cruzadas de 127.0.0.1 e 0.0.0.0 por padrão. Origens adicionais podem ser configuradas com OLLAMA_ORIGINS`
 
-## Install from source
+## Instalar a partir do código-fonte
 
-**1. Clone the repository to a directory on your pc via command prompt:**
+**1. Clone o repositório para um diretório em seu PC via prompt de comando:**
+````git clone https://github.com/jakobhoeg/nextjs-ollama-llm-ui```
 
 ```
 git clone https://github.com/jakobhoeg/nextjs-ollama-llm-ui
