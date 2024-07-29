@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">
-  Fully-featured & beautiful web interface for Ollama LLMs
+  ORA Model + Ollama LLM UI
 </h1>
 
 <div align="center">
